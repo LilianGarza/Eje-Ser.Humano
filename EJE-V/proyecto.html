@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Botones</title>
+    <style>
+        body {
+            background-image: url('ASSETS/fondovieo.gif');
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .boton {
+            font-size: 20px;
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .boton:hover {
+            transform: scale(1.1);
+        }
+        #lili { background-color: pink; }
+        #mari { background-color: green; }
+        #eve { background-color: yellow; color: black; }
+        #sugeli { background-color: brown; }
+    </style>
+</head>
+<body>
+    <h1>SER . HUMANO</h1>
+    <button class="boton" id="lili" onclick="window.location.href='lili.html'">LILI</button>
+    <button class="boton" id="mari" onclick="window.location.href='mari.html'">MARI</button>
+    <button class="boton" id="eve" onclick="window.location.href='eve.html'">EVE</button>
+    <button class="boton" id="sugeli" onclick="window.location.href='sugeli.html'">SUGELI</button>
+</body>
+</html>
