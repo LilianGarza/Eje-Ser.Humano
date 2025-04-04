@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Imágenes como Botones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('ASSETS/Blue\ And\ Green\ Animation\ GIF\ by\ Jeremy\ Speed\ Schwartz.gif');
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Estilo para el h1 */
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente bonita */
+            font-size: 10rem; /* Tamaño grande */
+            font-weight: 600; /* Peso de la fuente */
+            margin-bottom: 50px; /* Separación con los botones */
+            color: #357285; /* Color atractivo */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+        }
+
+        /* Contenedor para las columnas */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* Estilo para las imágenes de los botones */
+        .imagen-boton {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .imagen-boton:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive - Para que las imágenes se adapten en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen-boton {
+                width: 80%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Recuerdos</h1>
+    
+    <div class="container">
+        <img class="imagen-boton" src="ASSETS/IMAGENES/liliavatar.jpeg" alt="LILI" onclick="window.location.href='lili.html'">
+        <img class="imagen-boton" src="ASSETS/IMAGENES/maryavatar.jpeg" alt="MARI" onclick="window.location.href='mari.html'">
+        <img class="imagen-boton" src="ASSETS/IMAGENES/eveavatar.jpeg" alt="EVE" onclick="window.location.href='eve.html'">
+        <img class="imagen-boton" src="ASSETS/IMAGENES/adaavatar.jpeg" alt="SUGELI" onclick="window.location.href='sugeli.html'">
+    </div>
+
+    <script>
+        const imagenes = document.querySelectorAll('.imagen-boton');
+        imagenes.forEach(imagen => {
+            imagen.addEventListener('click', function() {
+                console.log('Imagen ' + imagen.alt + ' presionada');
+            });
+        });
+    </script>
+</body>
+</html>
