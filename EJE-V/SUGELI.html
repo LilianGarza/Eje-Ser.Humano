@@ -11,13 +11,114 @@
             text-align: center;
             font-family: Arial, sans-serif;
             color: rgb(151, 30, 30);
+            margin: 0;
+            padding: 0;
         }
+
         h1 {
             font-size: 100px;
+            margin-top: 50px;
+        }
+
+        /* Contenedor para las columnas */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        /* Estilo de las columnas */
+        .columna {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;  /* Ajustado para tener 3 columnas en una fila */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .columna h2 {
+            font-size: 20px;
+            color: rgb(151, 30, 30);
+        }
+
+        .columna p {
+            font-size: 16px;
+        }
+
+        /* Responsive - Para que las columnas se adapten en pantallas más pequeñas */
+        @media (max-width: 1200px) {
+            .columna {
+                width: 45%;  /* Ajuste para pantallas medianas (coloca 2 columnas por fila) */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .columna {
+                width: 80%;  /* Ajuste para pantallas pequeñas */
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>SUGELI</h1>
+    
+    <!-- Contenedor de las 9 columnas -->
+    <div class="container">
+        <!-- Columna 1 -->
+        <div class="columna">
+            <h2>Columna 1</h2>
+            <p>Contenido de la columna 1.</p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="columna">
+            <h2>Columna 2</h2>
+            <p>Contenido de la columna 2.</p>
+        </div>
+        <!-- Columna 3 -->
+        <div class="columna">
+            <h2>Columna 3</h2>
+            <p>Contenido de la columna 3.</p>
+        </div>
+        <!-- Columna 4 -->
+        <div class="columna">
+            <h2>Columna 4</h2>
+            <p>Contenido de la columna 4.</p>
+        </div>
+        <!-- Columna 5 -->
+        <div class="columna">
+            <h2>Columna 5</h2>
+            <p>Contenido de la columna 5.</p>
+        </div>
+        <!-- Columna 6 -->
+        <div class="columna">
+            <h2>Columna 6</h2>
+            <p>Contenido de la columna 6.</p>
+        </div>
+        <!-- Columna 7 -->
+        <div class="columna">
+            <h2>Columna 7</h2>
+            <p>Contenido de la columna 7.</p>
+        </div>
+        <!-- Columna 8 -->
+        <div class="columna">
+            <h2>Columna 8</h2>
+            <p>Contenido de la columna 8.</p>
+        </div>
+        <!-- Columna 9 -->
+        <div class="columna">
+            <h2>Columna 9</h2>
+            <p>Contenido de la columna 9.</p>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,21 +6,119 @@
     <title>EVE</title>
     <style>
         body {
-            /* Ruta a la imagen de fondo (asegúrate de que OLD.jpg esté en la misma carpeta que este archivo) */
+            /* Ruta a la imagen de fondo */
             background-image: url('ASSETS/IMAGENES/OLD.jpg');
-            background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
-            background-position: center;  /* Centra la imagen */
+            background-size: cover;
+            background-position: center;
             text-align: center;
             font-family: Arial, sans-serif;
-            color: rgb(240, 238, 135);  /* Color del texto */
+            color: rgb(240, 238, 135);
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font-size: 100px;
-            margin-top: 200px;  /* Espacio superior para centrar el texto mejor */
+            margin-top: 150px;  /* Ajuste para centrar el texto */
+        }
+
+        /* Contenedor para las columnas */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        /* Estilo de las columnas */
+        .columna {
+            background-color: rgba(255, 255, 255, 0.8);  /* Fondo blanco semitransparente */
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;  /* Ajuste para que cada columna tenga el 30% del ancho */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .columna h2 {
+            font-size: 20px;
+            color: rgb(151, 30, 30);  /* Color del título de cada columna */
+        }
+
+        .columna p {
+            color: rgb(30, 30, 30);  /* Color del texto dentro de las columnas */
+            font-size: 16px;
+        }
+
+        /* Estilos para pantallas pequeñas (responsive) */
+        @media (max-width: 1200px) {
+            .columna {
+                width: 45%;  /* En pantallas medianas, cada columna ocupa el 45% */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .columna {
+                width: 80%;  /* En pantallas pequeñas, las columnas ocupan el 80% del ancho */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .columna {
+                width: 90%;  /* En pantallas muy pequeñas, las columnas ocupan el 90% */
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>EVE</h1>
+    
+    <!-- Contenedor de las 9 columnas -->
+    <div class="container">
+        <div class="columna">
+            <h2>Columna 1</h2>
+            <p>Contenido de la columna 1. Puedes colocar texto, imágenes o cualquier otro contenido.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 2</h2>
+            <p>Contenido de la columna 2. Esta columna también puede contener texto o imágenes.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 3</h2>
+            <p>Contenido de la columna 3. Aquí puedes añadir más información o cualquier contenido que desees.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 4</h2>
+            <p>Contenido de la columna 4.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 5</h2>
+            <p>Contenido de la columna 5.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 6</h2>
+            <p>Contenido de la columna 6.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 7</h2>
+            <p>Contenido de la columna 7.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 8</h2>
+            <p>Contenido de la columna 8.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 9</h2>
+            <p>Contenido de la columna 9.</p>
+        </div>
+    </div>
+
 </body>
 </html>
+

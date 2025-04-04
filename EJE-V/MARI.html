@@ -6,18 +6,114 @@
     <title>MARI</title>
     <style>
         body {
-            background-image: url('ASSETS/IMAGENES/2000S.jpg');
-            background-size: cover;
+            background-image: url('ASSETS/IMAGENES/fondo\ mari.jpg');
+            background-size: cover; /* Mantiene el fondo como está, sin cambiar su tamaño */
+            background-position: center;
             text-align: center;
             font-family: Arial, sans-serif;
             color: rgb(52, 128, 77);
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font-size: 100px;
+            margin-top: 150px;
+        }
+
+        /* Contenedor para las columnas */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        /* Estilo de las columnas (sin fondo) */
+        .columna {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%; /* Ancho de las columnas en pantallas grandes */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .columna h2 {
+            font-size: 20px;
+            color: rgb(52, 128, 77);
+        }
+
+        .columna img {
+            width: 100%; /* Aumenta el tamaño de la imagen al 100% del ancho de la columna */
+            height: auto; /* Mantiene la proporción de la imagen */
+            max-width: none; /* Elimina cualquier límite de tamaño máximo */
+            margin-top: 10px; /* Espacio superior entre el título y la imagen */
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 1200px) {
+            .columna {
+                width: 45%; /* Ajusta el ancho en pantallas medianas */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .columna {
+                width: 80%; /* Ajusta el ancho en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .columna {
+                width: 90%; /* Ajuste para pantallas muy pequeñas */
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>MARI</h1>
+    
+    <!-- Contenedor de las 9 columnas -->
+    <div class="container">
+        <!-- 9 columnas con imágenes diferentes -->
+        <div class="columna">
+            <h2>Columna 1</h2>
+            <img src="ASSETS/IMAGENES/MARY1.jpeg" alt="Mary 1"> 
+        </div>
+        <div class="columna">
+            <h2>Columna 2</h2>
+            <img src="ASSETS/IMAGENES/MARY2.jpeg" alt="Mary 2">
+        </div>
+        <div class="columna">
+            <h2>Columna 3</h2>
+            <img src="ASSETS/IMAGENES/MARY3.jpeg" alt="Mary 3">
+        </div>
+        <div class="columna">
+            <h2>Columna 4</h2>
+            <img src="ASSETS/IMAGENES/MARY4.jpeg" alt="Mary 4">
+        </div>
+        <div class="columna">
+            <h2>Columna 5</h2>
+            <img src="ASSETS/IMAGENES/MARY5.jpeg" alt="Mary 5">
+        </div>
+        <div class="columna">
+            <h2>Columna 6</h2>
+            <img src="ASSETS/IMAGENES/MARY6.jpeg" alt="Mary 6">
+        </div>
+        <div class="columna">
+            <h2>Columna 7</h2>
+            <img src="ASSETS/IMAGENES/MARY7.jpeg" alt="Mary 7">
+        </div>
+        <div class="columna">
+            <h2>Columna 8</h2>
+            <img src="ASSETS/IMAGENES/MARY8.jpeg" alt="Mary 8">
+        </div>
+        <div class="columna">
+            <h2>Columna 9</h2>
+            <img src="ASSETS/IMAGENES/MARY9.jpeg" alt="Mary 9">
+        </div>
+    </div>
+
 </body>
 </html>

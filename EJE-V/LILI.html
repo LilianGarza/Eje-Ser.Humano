@@ -8,16 +8,109 @@
         body {
             background-image: url('ASSETS/IMAGENES/RETRO.jpg');
             background-size: cover;
+            background-position: center;
             text-align: center;
             font-family: Arial, sans-serif;
             color: rgb(160, 73, 109);
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font-size: 100px;
+            margin-top: 150px;
+        }
+
+        /* Contenedor para las columnas */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        /* Estilo de las columnas */
+        .columna {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%; /* Se ajustará más adelante para 9 columnas */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .columna h2 {
+            font-size: 20px;
+            color: rgb(160, 73, 109);
+        }
+
+        .columna p {
+            color: rgb(30, 30, 30);
+            font-size: 16px;
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 1200px) {
+            .columna {
+                width: 45%;  /* 2 columnas por fila */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .columna {
+                width: 80%;  /* 1 columna por fila */
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>LILI</h1>
+    
+    <!-- Contenedor de las 9 columnas -->
+    <div class="container">
+        <div class="columna">
+            <h2>Columna 1</h2>
+            <p>Contenido de la columna 1. Puedes colocar texto, imágenes o cualquier otro contenido.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 2</h2>
+            <p>Contenido de la columna 2. Esta columna también puede contener texto o imágenes.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 3</h2>
+            <p>Contenido de la columna 3. Aquí puedes añadir más información o cualquier contenido que desees.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 4</h2>
+            <p>Contenido de la columna 4. Puedes colocar texto, imágenes o cualquier otro contenido.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 5</h2>
+            <p>Contenido de la columna 5. Esta columna también puede contener texto o imágenes.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 6</h2>
+            <p>Contenido de la columna 6. Aquí puedes añadir más información o cualquier contenido que desees.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 7</h2>
+            <p>Contenido de la columna 7. Puedes colocar texto, imágenes o cualquier otro contenido.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 8</h2>
+            <p>Contenido de la columna 8. Esta columna también puede contener texto o imágenes.</p>
+        </div>
+        <div class="columna">
+            <h2>Columna 9</h2>
+            <p>Contenido de la columna 9. Aquí puedes añadir más información o cualquier contenido que desees.</p>
+        </div>
+    </div>
+
 </body>
 </html>
